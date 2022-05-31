@@ -1,0 +1,122 @@
+
+
+ @media only screen and (max-width: 750px) {
+   /*for mobile phones*/
+   [class*="col-"] {
+       width: 100%;
+   }
+}body{
+    font-family: Poppins, sans-serif;
+}
+
+.box {
+    background: rgba(89, 59, 155, 0.6);
+    border-radius: 20px;
+}
+
+.sambutan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color:#2D3748;
+
+}
+
+.sambutan2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1A202C;
+}
+
+.email {
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+
+.rememberforgot {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.signwithgoogle {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.join {
+text-align: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #593B9B;
+}
+
+.boxmerah {
+    background-color: rgba(239, 43, 56, 0.6);
+    border-radius: 20px;
+}
+
+.registacc {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1A202C;
+}
+
+.nameuser {
+    padding-top: none;
+    color: #4A5568;
+}
+
+.email1 {
+    color: #4A5568;
+}
+
+.password1 {
+    color: #4A5568;
+}
+
+.haveacc {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EF2B38;
+}
+
+.level {
+    text-align:center;
+}
+
+.main {
+    background-color: #BB94C5;
+}
+
+.dashkecil {
+    background-color: white;
+}
+
+.dashbesar {
+    background-color: #BB94C5;
+}
+
+.bawahlogo {
+    text-align: center;
+}
+
+.profil {
+    align-content:center;
+}
+
+

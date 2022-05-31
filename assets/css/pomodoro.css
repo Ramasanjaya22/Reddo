@@ -1,0 +1,177 @@
+:root{
+    --color-primary: #593B9B;
+    --color-dark: #363949;
+    --color-white:#fff;
+    --color-light: rgba(132,139,200,0.18);
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow: 0.2rem 3rem var(--color-light);
+}
+/* dark theme var */
+.dark-theme-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0,0,0,0.4);
+    --box-shadow: 10px 10px 5px 0px var(--color-light);
+}
+body {
+  height: 100vh;
+}
+.pomodoro-title{
+  margin-top: 2rem;
+  text-align: center;
+}
+input {
+  transition: 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: none;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin: 35px 0;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+  cursor: pointer;
+}
+label {
+  font-size: 12px;
+}
+form {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 400px;
+  margin: 5px auto;
+}
+form button {
+  background: rgb(25, 67, 255);
+  width: 100%;
+  margin: 5px 0;
+  color: white;
+}
+.start {
+  background: var(--color-primary);
+  color: white;
+}
+.break {
+  background: rgb(0, 199, 116);
+  color: #fff;
+}
+.reset {
+  background: rgb(250, 69, 109);
+  color: white;
+}
+.pause {
+  background: rgb(253, 143, 17);
+  color: white;
+}
+.resume {
+  background: rgb(131, 10, 252);
+  color: white;
+}
+.clock {
+  margin-top: 2rem;
+  padding: 3px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30%;
+  font-size: 24px;
+}
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-ring__circle {
+  margin-top: 2rem;
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: rgb(51, 65, 255);
+}
+
+
+.danger {
+  stroke: rgb(243, 17, 28);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(-90deg) scale(0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "clock form"
+      "btns ji";
+  }
+  .btn-group {
+    grid-area: btns;
+    justify-content: center;
+  }
+  .clock {
+    grid-area: clock;
+    height: 100%;
+  }
+  h1 {
+    grid-area: head;
+
+    align-self: center;
+  }
+  form {
+    align-self: center;
+    justify-self: center;
+    grid-area: form;
+    width: 50%;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    height: 40%;
+  }
+  footer {
+    position: static;
+  }
+}
