@@ -55,6 +55,14 @@ body{
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
 }
+.container-2{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 20rem auto 10rem;
+}
+
 
 a{
     color: var(--color-dark);

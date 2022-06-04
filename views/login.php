@@ -83,14 +83,12 @@
       </div>
 
       <div class="signwithgoogle">
-        <div class=" d-grid offset-2 col-lg-8 mt-3">
-          <p class="text-center">Or
-          <div id="tampil"><span class="g-signin2" type="button" data-onsuccess="onSignIn" data-theme="dark">
-            </span>
+            <div class=" d-grid gap-2 offset-2 col-lg-8 mt-3">
+              <button class="btn btn-dark" type="button" id="login">
+                <image src="../assets/img/google.png" width="20px" height="20px"></image> Or Sign-in with google
+              </button>
+            </div>
           </div>
-          </p>
-        </div>
-      </div>
       <br>
       <br>
       <br>

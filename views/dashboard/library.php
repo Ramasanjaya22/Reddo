@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <?php include('../../assets/includes/head.php') ?>
@@ -7,34 +7,69 @@
     <title>Library</title>
 </head>
 
-<body>
-    <div class="container">
-        <aside>
-            <?php
-            include('../../assets/includes/sidebar.php');
-            ?>
-        </aside>
-        <!-- end of aside -->
-        <main>
-            <h1>Library</h1>
-            <div class="card">
-                <div class="library">
-                    <?php
-                    include('../../assets/includes/cariBuku.php') ?>
+<body class="container">
+    <aside>
+        <?php
+        include('../../assets/includes/sidebar.php');
+        ?>
+    </aside>
+    <!-- end of aside -->
+    <main>
+        <h1>Library</h1>
+        <div class="insights">
+            <div class="sales">
+                <h2>
+                    1
+                </h2>
+                <div class="middle">
+                    <div class="left">
+                        <h3> Untuk menggunakan fitur library, kamu bisa melakukan pencarian dengan mengetik buku apa yang ingin kamu cari</h3>
+                    </div>
                 </div>
             </div>
-        </main>
+            <!-- end of sales -->
+            <div class="sales">
+                <h2>
+                    2
+                </h2>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Setelah itu bisa klik Search</h3>
+                    </div>
+                </div>
 
+            </div>
+            <!-- end of timer -->
+            <div class="sales">
+                <h2>
+                    3
+                </h2>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Pilih Buku yang ingin kamu baca, kamu juga bisa menambahkan buku kedalam buku favoritmu</h3>
+                    </div>
+                </div>
 
+            </div>
 
-
-        <!-- end of main -->
-        <div class="right">
-            <?php include('../../assets/includes/topprofile.php') ?>
         </div>
+        <!-- end of insights -->
+        <div class="recent-order">
+
+            <?php
+            include('../../assets/includes/cariBuku.php');
+            ?>
+
+        </div>
+
+    </main>
+    <!-- end of main -->
+    <div class="right">
+        <?php include('../../assets/includes/topprofile.php') ?>
+        <!-- end of top -->
     </div>
     <script src="../../assets/js/dashboard.js"></script>
-
+    
 </body>
 
 </html>
