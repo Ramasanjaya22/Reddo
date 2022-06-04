@@ -1,3 +1,31 @@
+<?php
+session_start();
+
+if (isset($_POST["login"])) {
+  include 'config.php';
+
+  $email = mysqli_real_escape_string($conn, $_POST["email"]);
+  $password = mysqli_real_escape_string($conn, md5($_POST["password"]));
+
+  $sql = "SELECT * FROM users WHERE email='{$email}' AND password='{$password}'";
+  $result = mysqli_query($conn, $sql);
+  $count = mysqli_num_rows($result);
+
+  if ($count === 1) {
+    $row = mysqli_fetch_assoc($result);
+    $_SESSION["SESSION_EMAIL"] = $email;
+    echo "<script>alert('Login Berhasil');</script>";
+    header("Location: dashboard/home.php");
+  } else {
+    echo "<script>alert('Login Gagal silahkan coba lagi.');</script>";
+  }
+}
+
+if (isset($_SESSION["SESSION_EMAIL"])) {
+  header("Location: dashboard/home.php");
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -50,35 +78,34 @@
           <div class="email ">
             <div class="offset-2 col-lg-8 mt-2">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Masukkan email kamu" autocomplete="off" required="true" autofocus="on">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Masukkan email kamu" autocomplete="off" required autofocus="on">
             </div>
           </div>
 
           <div class="password ">
             <div class="offset-2 col-lg-8">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" required="true">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" required>
               <input class="mt-2" type="checkbox" onclick="myFunction()">Show Password
             </div>
           </div>
-        </form>
 
-        <div class="rememberforgot">
-          <div class="row g-3 mt-2">
-            <div class="col offset-2">
-              <div class="rememberme">
-                <input type="radio" class="form-check-input" id="remember">
-                <label class="form-remember-label" for="rememberme" name="rememberme" value="rememberme">Remember
-                  me</label>
+          <div class="rememberforgot">
+            <div class="row g-3 mt-2">
+              <div class="col offset-2">
+                <div class="rememberme">
+                  <input type="radio" class="form-check-input" id="remember">
+                  <label class="form-remember-label" for="rememberme" name="rememberme" value="rememberme">Remember
+                    me</label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
 
       <div class="button">
         <div class=" d-grid gap-2 offset-2 col-lg-8 mt-4">
-          <a href="dashboard/home.php" class="btn btn-light" type="button"><b>Login now</b></a>
+          <button class="btn btn-light" name="login" type="submit"><b>Login now</b></button>
         </div>
       </div>
 
@@ -89,6 +116,12 @@
               </button>
             </div>
           </div>
+          </p>
+        </div>
+      </div>
+      </form>
+
+
       <br>
       <br>
       <br>

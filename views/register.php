@@ -1,3 +1,33 @@
+<?php
+session_start();
+if (isset($_SESSION["SESSION_EMAIL"])) {
+  header("Location: dashboard/home.php");
+}
+
+if (isset($_POST["submit"])) {
+  include 'config.php';
+
+  $name = mysqli_real_escape_string($conn, $_POST["name"]);
+  $username = mysqli_real_escape_string($conn, $_POST["username"]);
+  $email = mysqli_real_escape_string($conn, $_POST["email"]);
+  $password = mysqli_real_escape_string($conn, md5($_POST["password"]));
+
+  if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE email='{$email}'")) > 0) {
+    echo "<script>alert('{$email} - This email has already taken.');</script>";
+  } else {
+    $sql = "INSERT INTO users (name,username, email, password) VALUES ('{$name}','{$username}', '{$email}', '{$password}')";
+    $result = mysqli_query($conn, $sql);
+
+    if ($result) {
+      header("Location: login.php");
+    } else {
+      echo "<script>Error: " . $sql . mysqli_error($conn) . "</script>";
+    }
+  }
+}
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -34,63 +64,67 @@
           </div>
         </div>
 
-        <div class="nameuser">
-          <form class="row g-3 ">
-            <div class="offset-2 col-md-4">
-              <label for="inputNama" class="form-label">Nama</label>
-              <input type="Nama" class="form-control" id="inputNama">
-            </div>
-            <div class="col-md-4 ">
-              <label for="inputUsername" class="form-label">Username</label>
-              <input type="Username" class="form-control" id="inputUsername">
-            </div>
-          </form>
-
-          <form>
-            <div class="email1 ">
-              <div class="offset-2 col-lg-8 mt-2">
-                <label for="inputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail1">
+        <form action="" method="POST">
+          <div class="nameuser">
+            <div class="row g-3 ">
+              <div class="offset-2 col-md-4">
+                <label for="inputNama" class="form-label">Nama</label>
+                <input type="name" class="form-control" id="name"
+                name="name" placeholder="your name">
+              </div>
+              <div class="col-md-4 ">
+                <label for="inputUsername" class="form-label">Username</label>
+                <input type="username" class="form-control" id="username"
+                name="username" placeholder="username">
               </div>
             </div>
 
-            <div class="password1 ">
-              <div class="offset-2 col-lg-8">
-                <label for="inputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword1">
+            <div>
+              <div class="email1 ">
+                <div class="offset-2 col-lg-8 mt-2">
+                  <label for="inputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" 
+                  name="email" placeholder="your email">
+                </div>
+              </div>
+
+              <div class="password1 ">
+                <div class="offset-2 col-lg-8">
+                  <label for="inputPassword1" class="form-label">Password</label>
+                  <input type="password" 
+                  name="password"class="form-control" id="password" placeholder="password">
+                </div>
               </div>
             </div>
-          </form>
 
-          <div class="button">
-            <div class=" d-grid gap-2 offset-2 col-lg-8 mt-5">
-              <a href="dashboard/home.php" class="btn btn-light" type="button"><b>Register Now</b></a>
+            <div class="button">
+              <div class=" d-grid gap-2 offset-2 col-lg-8 mt-5">
+                <button class="btn btn-light" name="submit" type="submit"><b>Register Now</b></button>
+              </div>
             </div>
-          </div>
 
-          <div class="signwithgoogle">
-            <div class=" d-grid gap-2 offset-2 col-lg-8 mt-3">
-              <button class="btn btn-dark" type="button" id="login">
-                <image src="../assets/img/google.png" width="20px" height="20px"></image> Or Sign-in with google
-              </button>
+            <div class="signwithgoogle">
+              <div class=" d-grid gap-2 offset-2 col-lg-8 mt-3">
+                <button class="btn btn-dark" type="button" id="login">
+                  <image src="../assets/img/google.png" width="20px" height="20px"></image> Or Sign-in with google
+                </button>
+              </div>
             </div>
+            <br>
+            <br>
+            <br>
           </div>
-          <br>
-          <br>
-          <br>
-        </div>
       </div>
-  </section>
+      <div class="haveacc">
+        <h6>Have an account? <a href="./login.php" class="text-decoration-none">Sign in now!<masuk style="color:#3366cc">
+              </style>
+        </h6>
+        </form>
 
-  <div class="haveacc">
-    <h6>Have an account? <a href="./login.php" class="text-decoration-none">Sign in now!<masuk style="color:#3366cc">
-          </style>
-    </h6>
-  </div>
 
-  <!--Bootstrap Bundle with Popper -->
-  <script src="../assets/js/bootstrap.bundle.js"></script>
-  <script src="../assets/js/firebase.js" type="module"></script>
+        <!--Bootstrap Bundle with Popper -->
+        <script src="../assets/js/bootstrap.bundle.js"></script>
+        <script src="../assets/js/firebase.js" type="module"></script>
 </body>
 
 </html>

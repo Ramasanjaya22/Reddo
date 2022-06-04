@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8" />
@@ -49,8 +49,8 @@
                 </ul>
               </div>
               <div class="modal-footer border-0 gap-3" style="padding: 2rem; padding-top: 0.75rem">
-                <button class="btn btn-default btn-no-fill" type="submit" name="login">Log In</button>
-                <button class="btn btn-fill text-white">Register</button>
+                <a href="login.php" class="btn btn-default btn-no-fill" type="submit" name="login">Log In</a>
+                <a href="register.php" class="btn btn-fill text-white" name="register">Register</a>
               </div>
             </div>
           </div>
