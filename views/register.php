@@ -69,13 +69,11 @@ if (isset($_POST["submit"])) {
             <div class="row g-3 ">
               <div class="offset-2 col-md-4">
                 <label for="inputNama" class="form-label">Nama</label>
-                <input type="name" class="form-control" id="name"
-                name="name" placeholder="your name">
+                <input type="name" class="form-control" id="name" name="name" placeholder="your name">
               </div>
               <div class="col-md-4 ">
                 <label for="inputUsername" class="form-label">Username</label>
-                <input type="username" class="form-control" id="username"
-                name="username" placeholder="username">
+                <input type="username" class="form-control" id="username" name="username" placeholder="username">
               </div>
             </div>
 
@@ -83,16 +81,14 @@ if (isset($_POST["submit"])) {
               <div class="email1 ">
                 <div class="offset-2 col-lg-8 mt-2">
                   <label for="inputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" 
-                  name="email" placeholder="your email">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="your email">
                 </div>
               </div>
 
               <div class="password1 ">
                 <div class="offset-2 col-lg-8">
                   <label for="inputPassword1" class="form-label">Password</label>
-                  <input type="password" 
-                  name="password"class="form-control" id="password" placeholder="password">
+                  <input type="password" name="password" class="form-control" id="password" placeholder="password">
                 </div>
               </div>
             </div>
@@ -114,11 +110,10 @@ if (isset($_POST["submit"])) {
             <br>
             <br>
           </div>
-      </div>
-      <div class="haveacc">
-        <h6>Have an account? <a href="./login.php" class="text-decoration-none">Sign in now!<masuk style="color:#3366cc">
-              </style>
-        </h6>
+          <div class="haveacc">
+            <h6>Have an account? <a href="./login.php" class="text-decoration-none">Sign in now!<masuk style="color:#3366cc">
+                  </style>
+            </h6>
         </form>
 
 
