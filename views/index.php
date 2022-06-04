@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="../assets/css/landing.css">
 </head>
 
-<body class="h-100 w-100 bg-white">
+<body class="h-100 w-100">
   <header class="container-xxl mx-auto p-0  position-relative header-2-2">
-
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a href="#">
         <img style="margin-right: 0.75rem; width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
@@ -77,15 +77,12 @@
         </div>
       </div>
     </nav>
-
     <section id="home">
       <div class="mx-auto d-flex flex-lg-row flex-column hero">
         <!-- Left Column -->
         <div class="reveal left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-center">
-          <h1 class="title-text-big ">
-            Membaca Jadi Jauh Lebih Seru<br class="d-lg-block d-none" />
-            dengan REDDO
-          </h1>
+          <h1 class="title-text-big">Membaca Jadi Jauh Lebih Seru
+            dengan REDDO</h1>
           <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
             <a href="login.php" class="reveal btn d-inline-flex mb-md-0 btn-try text-white">
               Daftar sekarang
@@ -265,7 +262,6 @@
       </div>
     </div>
   </footer>
-
 
   <!-- reveal js -->
   <script src="../assets/js/reveal.js"></script>
