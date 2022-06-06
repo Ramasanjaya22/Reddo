@@ -31,6 +31,7 @@
     </style>
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
 
+
 </head>
 
 <div class="pomodoro-title">
@@ -141,14 +142,16 @@
         function formatOutput(bookImg, title, author, publisher, bookLink, bookIsbn) {
             // console.log(title + ""+ author +" "+ publisher +" "+ bookLink+" "+ bookImg)
             var viewUrl = 'book.html?isbn=' + bookIsbn; //constructing link for bookviewer
-            var htmlCard = `<div class="col-lg-6">
+            var htmlCard = `
+           
+            <div>
        <div class="card" style="">
-         <div class="row no-gutters">
-           <div class="col-md-4">
-             <img src="${bookImg}" class="card-img" alt="...">
+         <div class="row">
+           <div>
+             <img src="${bookImg}" class="card-img" style="width:40%" alt="...">
            </div>
-           <div class="col-md-8">
-             <div class="card-body">
+           <div>
+             <div class="card">
                <h5 class="card-title">${title}</h5>
                <p class="card-text">Author: ${author}</p>
                <p class="card-text">Publisher: ${publisher}</p>

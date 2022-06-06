@@ -23,7 +23,7 @@
                 </h2>
                 <div class="middle">
                     <div class="left">
-                        <h3> Untuk menggunakan fitur library, kamu bisa melakukan pencarian dengan mengetik buku apa yang ingin kamu cari</h3>
+                        <h3> Untuk menggunakan fitur library, kamu bisa lakukan pencarian dengan mengetikkannya pada kolom dibawah</h3>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 </h2>
                 <div class="middle">
                     <div class="left">
-                        <h3>Setelah itu bisa klik Search</h3>
+                        <h3>Setelah itu bisa klik Search 🔎 untuk mencari buku kamu</h3>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                 </h2>
                 <div class="middle">
                     <div class="left">
-                        <h3>Pilih Buku yang ingin kamu baca, kamu juga bisa menambahkan buku kedalam buku favoritmu</h3>
+                        <h3>Selanjutnya pilih Buku yang ingin kamu baca, kamu juga bisa menambahkan buku kedalam buku favoritmu 💜</h3>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
         <!-- end of top -->
     </div>
     <script src="../../assets/js/dashboard.js"></script>
-    
+
 </body>
 
 </html>
