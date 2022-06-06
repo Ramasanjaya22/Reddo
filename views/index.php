@@ -10,15 +10,25 @@
   <!-- style -->
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/css/landing.css">
+
+  
+  <style>
+    /* *{
+      border: 1px solid red;
+    } */
+  </style>
 </head>
 
 <body class="h-100 w-100">
-  <header class="container-xxl mx-auto p-0  position-relative header-2-2">
+
+  <header class="container-xxl mx-auto p-0  position-relative header">
+    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a href="#">
         <img style="margin-right: 0.75rem; width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
       </a>
+      <!-- btn-menu -->
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,7 +51,7 @@
                   <a class="nav-link" href="#fitur">Fitur</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Tentang Kami</a>
+                  <a class="nav-link" href="tentang_kami.php" target="_blank">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Kontak</a>
@@ -65,7 +75,7 @@
             <a class="nav-link" href="#fitur">Fitur</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tentang Kami</a>
+            <a class="nav-link" href="tentang_kami.php" target="_blank">Tentang Kami</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Kontak</a>
@@ -76,7 +86,10 @@
           <a href="register.php" class="btn btn-fill text-white">Register</a>
         </div>
       </div>
+
     </nav>
+    <!-- end of nav -->
+    
     <section id="home">
       <div class="mx-auto d-flex flex-lg-row flex-column hero">
         <!-- Left Column -->
@@ -91,27 +104,25 @@
         </div>
         <!-- Right Column -->
         <div class="reveal right-column text-center d-flex justify-content-center pe-0">
-
           <img id="img-fluid" class="h-auto mw-100" src="../assets/img/ilustrasi-buku.png" alt="" />
-
         </div>
       </div>
 
     </section>
   </header>
 
-  <section id="fitur" class="content-3-2 container-xxl mx-auto  position-relative">
+  <section id="fitur" class="content container-xxl mx-auto  position-relative">
     <div class="d-flex flex-lg-row flex-column align-items-center">
       <!-- Left Column -->
       <div class="reveal img-hero text-center justify-content-center d-flex">
-        <img id="hero" class="img-fluid" style="margin-right: 3rem;" src="../assets/img/ilustrasi-anak.png" alt="" />
+        <img id="hero" class="img-fluid border rounded-circle w-75" src="../assets/img/ilustrasi-anak.png" alt="" />
       </div>
 
       <!-- Right Column -->
       <div class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
         <h2 class="reveal title-text">3 Fitur Utama dari REDDO</h2>
         <ul style="padding: 0; margin: 0">
-          <li class="reveal list-unstyled" style="margin-bottom: 2rem">
+          <li class="reveal list-unstyled" style="margin-bottom: 1rem;">
             <h4 class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
               <span class="circle text-white d-flex align-items-center justify-content-center">
                 1
@@ -123,7 +134,7 @@
               secara mudah dan menyenangkan!
             </p>
           </li>
-          <li class="reveal list-unstyled" style="margin-bottom: 2rem">
+          <li class="reveal list-unstyled" style="margin-bottom: 1rem">
             <h4 class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
               <span class="circle text-white d-flex align-items-center justify-content-center">
                 2
@@ -135,7 +146,7 @@
               tenang aja, Reddo memiliki fitur untuk menampilkan halaman Perpustakaan untuk buat kamu yang lagi bingung mau baca apa. Jadi gausah searching" lagi nih
             </p>
           </li>
-          <li class="reveal list-unstyled" style="margin-bottom: 4rem">
+          <li class="reveal list-unstyled" style="margin-bottom: 3rem">
             <h4 class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
               <span class="circle text-white d-flex align-items-center justify-content-center">
                 3
@@ -153,7 +164,7 @@
     </div>
   </section>
 
-  <footer class="footer-2-2 container-xxl mx-auto position-relative p-0">
+  <footer class="footer container-xxl mx-auto position-relative p-0">
     <div class="list-footer">
       <div class="row gap-md-0 gap-3">
         <div class="col-lg-4 col-md-6">
@@ -201,7 +212,7 @@
         <hr class="hr" />
       </div>
       <div class="mx-auto d-flex flex-column flex-lg-row align-items-center footer-info-space gap-4">
-        <div class="d-flex title-font font-medium align-items-center gap-4">
+        <!-- <div class="d-flex title-font font-medium align-items-center gap-4">
           <a href="">
             <svg class="social-media-c" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
@@ -248,16 +259,16 @@
               </defs>
             </svg>
           </a>
-        </div>
-        <nav class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4">
+        </div> -->
+        <!-- <nav class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4">
           <a href="" class="footer-link" style="text-decoration: none">Terms of Service</a>
           <span>|</span>
           <a href="" class="footer-link" style="text-decoration: none">Privacy Policy</a>
           <span>|</span>
           <a href="" class="footer-link" style="text-decoration: none">Licenses</a>
-        </nav>
+        </nav> -->
         <nav class="d-flex flex-lg-row flex-column align-items-center justify-content-center">
-          <p style="margin: 0">Copyright © 2022 TE4M</p>
+          <p style="margin: 0">Copyright © 2022 TE4M REDDO | D3RPLA45 04 | Proyek Tingkat 1</p>
         </nav>
       </div>
     </div>
