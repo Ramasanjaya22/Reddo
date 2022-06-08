@@ -100,8 +100,8 @@
                 <div class="grid-padding text-center">
                     <div class="reveal row">
                         <div class="col-lg-4 column">
-                            <div class="rounded-5" style="background:#593B9B;">
-                                <img class="w-50 " src="../assets/img/aboutUs/rama.jpeg" alt="" />
+                            <div class="rounded-5 p-2" style="background:#593B9B;">
+                                <img class="rounded-5 p-2" style="width: 100%;" src="../assets/img/aboutUs/rama1.jpeg" alt="" />
                             </div>
                             <h3 class="title">Rama Sanjaya</h3>
                             <p class="caption">
@@ -111,8 +111,8 @@
                             </p>
                         </div>
                         <div class="col-lg-4 column">
-                            <div class="rounded-5"style="background:#593B9B;">
-                                <img class="w-50" src="../assets/img/aboutUs/ihdazul.jpeg" alt="" />
+                            <div class="rounded-5 p-2"style="background:#593B9B;">
+                                <img class="rounded-5 p-2" style="width: 95%;" src="../assets/img/aboutUs/ihdazul1.jpeg" alt="" />
                             </div>
                             <h3 class="title">Ihdazul Aruna Syahriar</h3>
                             <p class="caption">
@@ -121,8 +121,8 @@
                             </p>
                         </div>
                         <div class="col-lg-4 column">
-                            <div class="rounded-5"style="background:#593B9B;">
-                                <img class="w-50" src="../assets/img/aboutUs/thessa.jpeg" alt="" />
+                            <div class="rounded-5 p-2"style="background:#593B9B;">
+                                <img class="rounded-5 p-2" style="width: 80%;" src="../assets/img/aboutUs/thessa1.jpeg" alt="" />
                             </div>
                             <h3 class="title">Thessa Roxana</h3>
                             <p class="caption">

@@ -205,12 +205,11 @@ body{
       }
 
       .about-us .title-text {
-        padding-top: 5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
       }
 
       .about-us .text-title {
-        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        font: 600 Poppins, sans-serif;
         color: #121212;
         margin-bottom: 0.625rem;
       }
