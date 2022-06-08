@@ -29,16 +29,19 @@
                 <img style="margin-right: 0.75rem; width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
             </a>
             <!-- btn-menu | responsive -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal"
+                data-bs-target="#targetModal-item">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog" aria-labelledby="targetModalLabel" aria-hidden="true">
+            <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog"
+                aria-labelledby="targetModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content bg-white border-0">
                         <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
                             <a class="modal-title" id="targetModalLabel">
-                                <img style="margin-top: 0.5rem;width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
+                                <img style="margin-top: 0.5rem;width: 75px;" src="../assets/img/reddo-transparant.png"
+                                    alt="logo" />
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -59,7 +62,8 @@
                             </ul>
                         </div>
                         <div class="modal-footer border-0 gap-3" style="padding: 2rem; padding-top: 0.75rem">
-                            <a href="login.php" class="btn btn-default btn-no-fill" type="submit" name="login">Log In</a>
+                            <a href="login.php" class="btn btn-default btn-no-fill" type="submit" name="login">Log
+                                In</a>
                             <a href="register.php" class="btn btn-fill text-white" name="register">Register</a>
                         </div>
                     </div>
@@ -101,7 +105,7 @@
                     <div class="reveal row">
                         <div class="col-lg-4 column">
                             <div class="rounded-5" style="background:#593B9B;">
-                                <img class="w-50 " src="../assets/img/aboutUs/rama.jpeg" alt="" />
+                                <img src="../assets/img/aboutUs/rama.jpeg" alt="" />
                             </div>
                             <h3 class="title">Rama Sanjaya</h3>
                             <p class="caption">
@@ -111,8 +115,8 @@
                             </p>
                         </div>
                         <div class="col-lg-4 column">
-                            <div class="rounded-5"style="background:#593B9B;">
-                                <img class="w-50" src="../assets/img/aboutUs/ihdazul.jpeg" alt="" />
+                            <div class="rounded-5" style="background:#593B9B;">
+                                <img src="../assets/img/aboutUs/ihdazul.jpeg" alt="" />
                             </div>
                             <h3 class="title">Ihdazul Aruna Syahriar</h3>
                             <p class="caption">
@@ -121,12 +125,12 @@
                             </p>
                         </div>
                         <div class="col-lg-4 column">
-                            <div class="rounded-5"style="background:#593B9B;">
-                                <img class="w-50" src="../assets/img/aboutUs/thessa.jpeg" alt="" />
+                            <div class="rounded-5" style="background:#593B9B;">
+                                <img src="../assets/img/aboutUs/thessa.jpeg" alt="" />
                             </div>
                             <h3 class="title">Thessa Roxana</h3>
                             <p class="caption">
-                               NIM : 6706213025<br />
+                                NIM : 6706213025<br />
                                 Frontend Developer | UX Designer
                             </p>
                         </div>

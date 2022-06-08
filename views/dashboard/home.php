@@ -9,16 +9,19 @@
 
 <body>
     <div class="container">
+        <!-- aside -->
         <aside>
             <?php
             include('../../assets/includes/sidebar.php');
             ?>
         </aside>
         <!-- end of aside -->
+
+        <!--main  -->
         <main>
             <h1>Home</h1>
             <div class="insights">
-                <div class="sales">
+                <div class="card-insights">
                     <h2>
                         1
                     </h2>
@@ -28,8 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- end of sales -->
-                <div class="sales">
+                <div class="card-insights">
                     <h2>
                         2
                     </h2>
@@ -41,8 +43,7 @@
                     </div>
 
                 </div>
-                <!-- end of timer -->
-                <div class="sales">
+                <div class="card-insights">
                     <h2>
                         3
                     </h2>
@@ -53,10 +54,10 @@
                     </div>
 
                 </div>
-
             </div>
             <!-- end of insights -->
-            <div class="recent-order">
+
+            <div class="content-1">
 
                 <?php
                 include('../../assets/includes/pomodoro.php');
@@ -79,14 +80,9 @@
                 </div>
             </div>
             <!-- end of recent updates -->
-            <div class="sales-analytics">
+            <div class="card-insights-analytics">
                 <h2>History bacaan</h2>
                 <div class="item">
-                    <div class="icon">
-                        <span class="material-symbols-sharp">
-                            1
-                        </span>
-                    </div>
                     <div class="right">
                         <div class="info">
                             <h3>Halaman 20</h3>
@@ -125,7 +121,11 @@
             </div>
         </div>
     </div>
+
+
     <script src="../../assets/js/dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
