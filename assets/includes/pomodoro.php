@@ -7,6 +7,7 @@
   <title>Home</title>
   <link rel="stylesheet" href="../../assets/css/pomodoro.css">
   <link rel="stylesheet" href="../../assets/css/dashboard.css">
+  
 
 </head>
 
@@ -30,11 +31,11 @@
   </div>
 
   <form action=".">
-    <label for="focusTime">Focus Time</label>
+    <label for="focusTime">Focus Time (dalam menit)</label>
     <input type="number" value="1" id="focusTime" />
     <label for="breakTime">Break Time</label>
     <input type="number" value="1" id="breakTime" />
-    <button type="submit">Save settings</button>
+    <button type="submit">Simpan settingan</button>
   </form>
 
   <script src="../../assets/js/settings.js"></script>

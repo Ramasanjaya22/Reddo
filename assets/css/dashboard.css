@@ -239,13 +239,13 @@ main .insights > div:hover{
 } */
 
 /* recent orders */
-main .recent-orders{
+main .content-1s{
     margin-top: 2rem;
 }
-main .recent-orders h2{
+main .content-1s h2{
     margin-bottom: 0.8rem;
 }
-main .recent-orders .card{
+main .content-1s .card{
     background: var(--color-white);
     width: 100%;
     border-radius: var(--card-border-radius);
@@ -255,7 +255,7 @@ main .recent-orders .card{
     transition: all 300ms ease;
     
 }
-main .recent-orders table:hover{
+main .content-1s table:hover{
     box-shadow: var(--box-shadow);
 }
 /*   */
@@ -381,14 +381,14 @@ main .recent-orders table:hover{
         grid-template-columns: 1fr;
         gap: 0;
     }
-    main .recent-orders{
+    main .content-1s{
         width: 94%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         margin: 2rem 0 0 8.8rem;
     }
-    main .recent-orders table{
+    main .content-1s table{
         width: 83vw;
     }
     main table:first-child{
@@ -446,12 +446,12 @@ main .recent-orders table:hover{
         margin-top: 8rem;
         padding: 0 1rem;
     }
-    main .recent-orders{
+    main .content-1s{
         position: relative;
         margin: 3rem 0 0 0;
         width: 100%;
     }
-    main .recent-orders table{
+    main .content-1s table{
         width: 100%;
         margin: 0;
     }

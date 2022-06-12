@@ -18,7 +18,7 @@
         <main>
             <h1>Home</h1>
             <div class="insights">
-                <div class="sales">
+                <div class="small-card-1">
                     <h2>
                         1
                     </h2>
@@ -28,8 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- end of sales -->
-                <div class="sales">
+                <div class="small-card-2">
                     <h2>
                         2
                     </h2>
@@ -41,8 +40,7 @@
                     </div>
 
                 </div>
-                <!-- end of timer -->
-                <div class="sales">
+                <div class="small-card-3">
                     <h2>
                         3
                     </h2>
@@ -53,10 +51,10 @@
                     </div>
 
                 </div>
-
             </div>
             <!-- end of insights -->
-            <div class="recent-order">
+
+            <div class="content-1">
 
                 <?php
                 include('../../assets/includes/pomodoro.php');
@@ -78,7 +76,8 @@
 
                 </div>
             </div>
-            <!-- end of recent updates -->
+            <!-- end of bookmark -->
+
             <div class="sales-analytics">
                 <h2>History bacaan</h2>
                 <div class="item">
