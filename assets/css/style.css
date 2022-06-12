@@ -1,11 +1,6 @@
 
 
- @media only screen and (max-width: 750px) {
-   /*for mobile phones*/
-   [class*="col-"] {
-       width: 100%;
-   }
-}body{
+body{
     font-family: Poppins, sans-serif;
 }
 
@@ -62,7 +57,7 @@ line-height: 19px;
 color: #593B9B;
 }
 
-.boxmerah {
+.boxmerah{
     background-color: rgba(239, 43, 56, 0.6);
     border-radius: 20px;
 }
@@ -119,4 +114,23 @@ color: #593B9B;
     align-content:center;
 }
 
-
+/* responsive */
+/* @media (min-width: 576px){
+    box,boxmerah{
+        max-width: 95%;
+        padding: 3rem 2rem 5rem;
+    }
+}
+@media (min-width: 768px){
+    body{
+        max-width: 95%;
+        padding: 3rem 4rem;
+    }
+}
+@media (min-width: 992px){
+    body{
+        max-width: 95%;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    }
+} */

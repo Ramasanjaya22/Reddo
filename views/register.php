@@ -51,7 +51,7 @@ if (isset($_POST["submit"])) {
 
 <body>
 
-  <section class="boxmerah  col-12 col-lg-6 mx-auto mt-2">
+  <section class="boxmerah col-12 col-lg-6 mx-auto mt-2">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-3 col-lg-3 mx-auto ">
