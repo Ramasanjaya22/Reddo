@@ -37,7 +37,8 @@ input {
   font-size: 18px;
   padding: 5px;
   border: none;
-  background: var(--color-dark);
+  color:var(--color-dark) ;
+  background: var(--color-white);
   border: var(--border-radius-1);
 }
 .btn-group {
@@ -55,9 +56,11 @@ button {
   transition: 0.5s ease-in-out;
   border-radius: 20px;
   cursor: pointer;
+  color:white;
 }
 label {
   font-size: 12px;
+  color:var(--color-dark);
 }
 form {
   height: 20%;
@@ -69,10 +72,13 @@ form {
   color: var(--color-white);
 }
 form button {
-  /* background: rgb(25, 67, 255); */
+  background: rgb(25, 67, 255);
   width: 100%;
   margin: 5px 0;
-  color: var(--color-white);
+  color: white;
+}
+form button:hover{
+  background: rgb(17, 44, 161);
 }
 .start {
   background: var(--color-primary);

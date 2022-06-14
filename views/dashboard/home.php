@@ -64,63 +64,54 @@
 
         </main>
         <!-- end of main -->
+
+
         <div class="right">
             <?php include('../../assets/includes/topprofile.php') ?>
             <!-- end of top -->
+
+            <!-- check data bookmark di db -->
+            
+
             <div class="bookmark">
                 <h2>Bookmark kamu</h2>
                 <div class="updates">
-                    <input type="text" name="" id="" placeholder="halaman terakhir bacaan">
-                    <textarea name="w3review" rows="5" cols="35" placeholder="masukkan catatan kamu disini" wrap="hard"></textarea>
-                    <button class="btn" type="submit">save</button>
+                    <input type="text" name="halaman" placeholder="halaman terakhir bacaan">
+                    <textarea name="w3review" rows="5" cols="35" placeholder="masukkan catatan kamu disini" wrap="hard" name="catatan"></textarea>
+                    <button class="btn" type="submit" value="Create">save</button>
 
                 </div>
             </div>
             <!-- end of bookmark -->
 
+
+            <?php
+            include "../config.php";
+            
+            $ambilData = mysqli_query($conn,"SELECT * FROM bookmark");
+            $data=[];
+            while($tampil = mysqli_fetch_assoc($ambilData)){
+                $data[] = $tampil;
+            }
+            $bookmark = $data;
+            ?>
             <div class="sales-analytics">
                 <h2>History bacaan</h2>
-                <div class="item">
-                    <div class="icon">
-                        <span class="material-symbols-sharp">
-                            1
-                        </span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>Halaman 20</h3>
-                            <small>last 24</small>
+                <?php $no = 1; foreach ($bookmark as $bookmark) : ?>
+                    <div class="item">
+                        <div class="number_history">
+                            <span>
+                                <?= $no++?>
+                            </span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3><?= $bookmark['halaman'] ?></h3>
+                                <small><?= $bookmark['catatan'] ?></small>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--  card2-->
-                <div class="item">
-                    <div class="icon">
-                        <span class="material-symbols-sharp">
-                            2
-                        </span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>Halaman 30</h3>
-                            <small>last 24</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <span class="material-symbols-sharp">
-                            3
-                        </span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>Halaman 20</h3>
-                            <small>last 24</small>
-                        </div>
-                    </div>
-                </div>
-                <!-- card3 -->
+                <?php endforeach; ?>
             </div>
         </div>
     </div>

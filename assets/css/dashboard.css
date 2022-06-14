@@ -321,9 +321,11 @@ main .content-1s table:hover{
     background: var(--color-light);
     color: var(--color-dark);
 }
-
-.right .bookmark .updates .btn:hover{
+.right .bookmark .updates .btn{
     background: var(--color-primary);
+}
+.right .bookmark .updates .btn:hover{
+    background: #2d1d4e;
     color: var(--color-white);
 }
 /* sales analystics */

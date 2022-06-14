@@ -58,27 +58,21 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
   <section class="box col-12 col-lg-6 mx-auto mt-2">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 mx-auto ">
-          <image src="../assets/img/reddo-transparant.png" width="150px" , height="150px"></image>
+        <div class="col-lg-3 mx-auto">
+          <image src="../assets/img/reddo-transparant.png" class="img-fluid lg-w-100"></image>
         </div>
         <div class="sambutan">
-          <div class="offset-2 ">
+          <div class="offset-2">
             <h6>Welcome Back</h6>
+            <h4 style="color:#1A202C"><b>Login to your account</b></h4>
           </div>
         </div>
 
-        <div class="sambutan2">
-          <div class="offset-2">
-            <h4><b>Login to your account</b></h4>
-          </div>
-        </div>
-        <br>
-        <br>
         <form action="" method="POST">
           <div class="email ">
             <div class="offset-2 col-lg-8 mt-2">
               <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" id="email" placeholder="Masukkan email kamu" autocomplete="off" required autofocus="on">
+              <input type="email" name="email" class="form-control md-w-50" id="email" placeholder="Masukkan email kamu" autocomplete="off" required autofocus="on">
             </div>
           </div>
 
@@ -110,21 +104,22 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
       </div>
 
       <div class="signwithgoogle">
-            <div class=" d-grid gap-2 offset-2 col-lg-8 mt-3">
-              <button class="btn btn-dark" type="button" id="login">
-                <image src="../assets/img/google.png" width="20px" height="20px"></image> Or Sign-in with google
-              </button>
-            </div>
-          </div>
-          </p>
+        <div class=" d-grid gap-2 offset-2 col-lg-8 mt-3">
+          <button class="btn btn-dark" type="button" id="login">
+            <image src="../assets/img/google.png" width="20px" height="20px"></image> Or Sign-in with google
+          </button>
         </div>
       </div>
-      </form>
+      </p>
+    </div>
+    </div>
+    </form>
 
 
-      <br>
-      <br>
-      <br>
+
+    <br>
+    <br>
+    <br>
     </div>
     </div>
   </section>

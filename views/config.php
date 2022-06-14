@@ -1,6 +1,6 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "","test");
+$conn = mysqli_connect("localhost", "root", "", "test");
 
-    if (!$conn) {
-        echo "<script>alert('Connection failed.');</script>";
-    }
+if (!$conn) {
+    echo "<script>alert('Connection failed.');</script>";
+}

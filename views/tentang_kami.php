@@ -54,7 +54,7 @@
                                     <a class="nav-link active" href="#tentangkami" target="_blank">Tentang Kami</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Kontak</a>
+                                    <a class="nav-link" href="https://wa.link/vizf4y">Kontak</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,7 +78,7 @@
                         <a class="nav-link active" href="#tentangkami" target="_blank">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
+                        <a class="nav-link" href="https://wa.link/vizf4y">Kontak</a>
                     </li>
                 </ul>
                 <div class="gap-3">
@@ -155,7 +155,7 @@
                                 <a href="" class="list-menu">Tentang Kami</a>
                             </li>
                             <li class="list-space">
-                                <a href="" class="list-menu">Kontak</a>
+                                <a href="https://wa.link/vizf4y" class="list-menu">Kontak</a>
                             </li>
                         </nav>
                     </div>
