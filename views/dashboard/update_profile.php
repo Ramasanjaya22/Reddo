@@ -53,98 +53,100 @@ if (isset($_POST['update_profile'])) {
     <title>Profil</title>
 </head>
 
-<body class="container">
-    <aside>
-        <?php
-        include('../../assets/includes/sidebar.php');
-        ?>
-    </aside>
-    <!-- end of aside -->
-    <main>
-        <h1 style="text-align: center;">Profile</h1>
-        <div class="card">
-
+<body>
+    <div class="container">
+        <aside>
             <?php
-            $select = mysqli_query($conn, "SELECT * FROM `users` WHERE id=$user_id") or die('query failed');
-            if (mysqli_num_rows($select) > 0) {
-                $fetch = mysqli_fetch_assoc($select);
-            }
+            include('../../assets/includes/sidebar.php');
             ?>
+        </aside>
+        <!-- end of aside -->
+        <main>
+            <h1 style="text-align: center;">Profile</h1>
+            <div class="card">
 
-            <div class="profile-user" style="padding:1rem;text-align: center;align-items: center;">
-                <h1>Update Profile</h1>
+                <?php
+                $select = mysqli_query($conn, "SELECT * FROM `users` WHERE id=$user_id") or die('query failed');
+                if (mysqli_num_rows($select) > 0) {
+                    $fetch = mysqli_fetch_assoc($select);
+                }
+                ?>
 
-                <form action="" method="post" enctype="multipart/form-data">
-                    <div class="photo-profile">
-                        <?php
-                        if ($fetch['Image'] == '') {
-                            echo '<img src="../../assets/img/icon/profil.webp"style="width:50%;margin-left: auto;
+                <div class="profile-user" style="padding:1rem;text-align: center;align-items: center;">
+                    <h1>Update Profile</h1>
+
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="photo-profile">
+                            <?php
+                            if ($fetch['Image'] == '') {
+                                echo '<img src="../../assets/img/icon/profil.webp"style="width:50%;margin-left: auto;
                         margin-right: auto;">';
-                        } else {
-                            echo '<img src="../../assets/img/uploaded_img/' . $fetch['Image'] . '" style="width:50%;margin-left: auto;
+                            } else {
+                                echo '<img src="../../assets/img/uploaded_img/' . $fetch['Image'] . '" style="width:50%;margin-left: auto;
                         margin-right: auto;">';
-                        }
-                        ?>
-                    </div>
+                            }
+                            ?>
+                        </div>
 
-                    <div style="display: flex; margin-top: 1rem;">
-                        <div class="inputBox" style=" 
+                        <div style="display: flex; margin-top: 1rem;">
+                            <div class="inputBox" style=" 
                         border-radius: var(--border-radius-1);
                         background: var(--color-light);
                         color: var(--color-dark);
                         margin-right: 4px;">
-                            <span>username kamu :</span>
-                            <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box">
-                            <br>
-                            <span>email kamu :</span>
-                            <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
-                            <br>
-                            <span>update profil :</span>
-                            <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
-                        </div>
+                                <span>username kamu :</span>
+                                <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box">
+                                <br>
+                                <span>email kamu :</span>
+                                <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
+                                <br>
+                                <span>update profil :</span>
+                                <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
+                            </div>
 
-                        <div class="inputBox" style=" 
+                            <div class="inputBox" style=" 
                         border-radius: var(--border-radius-1);
                         background: var(--color-light);
                         color: var(--color-dark);
                         padding-right: 0.5rem;">
-                            <input type="hidden" name="old_pass" value="<?php echo $fetch['password']; ?>">
-                            <span>password lama:</span>
-                            <input type="password" name="update_pass" placeholder="enter previous password" class="box">
-                            <br>
-                            <span>password baru:</span>
-                            <input type="password" name="new_pass" placeholder="enter new password" class="box">
-                            <br>
-                            <span>confirm password :</span>
-                            <input type="password" name="confirm_pass" placeholder="confirm new password" class="box">
-                            <br>
+                                <input type="hidden" name="old_pass" value="<?php echo $fetch['password']; ?>">
+                                <span>password lama:</span>
+                                <input type="password" name="update_pass" placeholder="enter previous password" class="box">
+                                <br>
+                                <span>password baru:</span>
+                                <input type="password" name="new_pass" placeholder="enter new password" class="box">
+                                <br>
+                                <span>confirm password :</span>
+                                <input type="password" name="confirm_pass" placeholder="confirm new password" class="box">
+                                <br>
+                            </div>
                         </div>
-                    </div>
 
 
 
-                    <div style="margin-top: 1rem;">
-                        <button class="btn" type="submit" style="background: var(--color-primary);
+                        <div style="margin-top: 1rem;">
+                            <button class="btn" type="submit" style="background: var(--color-primary);
                 color: var(--color-white);
                 padding: 1rem;
                 border-radius: var(--border-radius-2);
                 font-weight: 700;
                 cursor: pointer;" value="update profile" name="update_profile">Update Profile</button>
-                        <a href="home.php"><button class="btn" type="submit" style="background: var(--color-danger);
+                            <a href="home.php"><button class="btn" type="submit" style="background: var(--color-danger);
                 color: var(--color-white);
                 padding: 1rem;
                 border-radius: var(--border-radius-2);
                 font-weight: 700;
                 cursor: pointer;" value="update profile" name="update_profile">Kembali</button></a>
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </main>
-    <!-- end of main -->
+        </main>
+        <!-- end of main -->
 
 
-    <script src="../../assets/js/dashboard.js"></script>
+        <script src="../../assets/js/dashboard.js"></script>
+    </div>
 </body>
 
 </html>

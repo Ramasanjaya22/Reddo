@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <style>
-        body {
-            height: 100vh;
-        }
-
-        .pomodoro-title {
-            margin-top: 2rem;
-            text-align: center;
-        }
-
-        input {
-            transition: 0.5s ease-in-out;
-            margin: 10px 0;
-            font-size: 18px;
-            padding: 5px;
-            background: rgba(0, 0, 0, 0.11);
-            border: none;
-        }
-
-        button:hover {
-            background: var(--color-primary);
-            color: var(--color-white);
-        }
-    </style>
-    <link rel="stylesheet" href="../../assets/css/dashboard.css">
-
-
-</head>
-
 <div class="pomodoro-title">
     <h1 id="header">Cari Buku Favorit Kamu</h1>
     <div class="row">
@@ -50,12 +14,9 @@
             <!-- card  -->
 
         </div>
-
     </div>
 </div>
-</div>
 
-</html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <!-- <script src="../js/bookapi.js"></script> -->

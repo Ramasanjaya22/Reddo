@@ -13,7 +13,8 @@ $user_id = $_SESSION['user_id'];
     <title>Buku Favorit</title>
 </head>
 
-<body class="container"> 
+<body> 
+    <div class="container">
         <aside>
             <?php
             include('../../assets/includes/sidebar.php');
@@ -30,6 +31,7 @@ $user_id = $_SESSION['user_id'];
     </div>
 
     <script src="../../assets/js/dashboard.js"></script>
+    </div>
 </body>
 
 </html>

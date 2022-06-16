@@ -4,6 +4,8 @@
             menu
         </span>
     </button>
+
+
     <div class="theme-toggler">
         <span class="material-icons-sharp active">
             light_mode
@@ -12,6 +14,7 @@
             dark_mode
         </span>
     </div>
+
 
     <?php
     $select = mysqli_query($conn, "SELECT * FROM `users` WHERE id=$user_id") or die('query failed');

@@ -12,6 +12,27 @@ closeBtn.addEventListener('click', () => {
 
 //change theme
 themeToggler.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme-variables');
+    var SetTheme = document.body;
+    SetTheme.classList.toggle('dark-theme-variables');
     themeToggler.querySelector('span').classList.toggle('active');
+    var theme;
+    if(SetTheme.classList.contains("dark-theme-variables")){
+        
+        console.log("Dark mode");
+        theme = "DARK";
+    }else{
+        console.log("Light mode");
+        theme = "LIGHT";
+    }
+    localStorage.setItem("PageTheme", JSON.stringify(theme));
 })
+
+setInterval(() => {
+    let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+    console.log(GetTheme);
+    if(GetTheme === "DARK"){
+        document.body.classList = "dark-theme-variables";
+    }else{
+        document.body.classList = "";
+    }
+}, 5);

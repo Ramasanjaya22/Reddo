@@ -14,30 +14,32 @@ $user_id = $_SESSION['user_id'];
     <title>Library</title>
 </head>
 
-<body class="container">
-    <aside>
-        <?php
-        include('../../assets/includes/sidebar.php');
-        ?>
-    </aside>
-    <!-- end of aside -->
-    <main>
-        <h1>Library</h1>
-        <div>
+<body>
+    <div class="container">
+        <aside>
             <?php
-            include('../../assets/includes/cariBuku.php');
+            include('../../assets/includes/sidebar.php');
             ?>
+        </aside>
+        <!-- end of aside -->
+        <main>
+            <h1>Library</h1>
+            <div>
+                <?php
+                include('../../assets/includes/cariBuku.php');
+                ?>
+            </div>
+        </main>
+        <!-- end of main -->
+
+        <div class="right">
+            <?php include('../../assets/includes/topprofile.php') ?>
+            <!-- end of top -->
         </div>
-    </main>
-    <!-- end of main -->
 
-    <div class="right">
-        <?php include('../../assets/includes/topprofile.php') ?>
-        <!-- end of top -->
+
+        <script src="../../assets/js/dashboard.js"></script>
     </div>
-
-
-    <script src="../../assets/js/dashboard.js"></script>
 </body>
 
 </html>

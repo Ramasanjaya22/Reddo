@@ -7,6 +7,7 @@ if (!isset($user_id)) {
     header('location:../login.php');
 };
 
+
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,8 @@ if (!isset($user_id)) {
     <title>Home</title>
 </head>
 
-<body class="container">
+<body>
+    <div class="container">
     <aside>
         <?php
         include('../../assets/includes/sidebar.php');
@@ -126,6 +128,7 @@ if (!isset($user_id)) {
     </div>
     </div>
     <script src="../../assets/js/dashboard.js"></script>
+    </div>
 </body>
 
 </html>
