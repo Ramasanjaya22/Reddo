@@ -1,9 +1,8 @@
 <?php
+include 'config.php';
 session_start();
 
 if (isset($_POST["login"])) {
-  include 'config.php';
-
   $email = mysqli_real_escape_string($conn, $_POST["email"]);
   $password = mysqli_real_escape_string($conn, md5($_POST["password"]));
 
@@ -11,18 +10,14 @@ if (isset($_POST["login"])) {
   $result = mysqli_query($conn, $sql);
   $count = mysqli_num_rows($result);
 
-  if ($count === 1) {
+  if ($count > 0) {
     $row = mysqli_fetch_assoc($result);
-    $_SESSION["SESSION_EMAIL"] = $email;
+    $_SESSION["user_id"] = $row['id'];
     echo "<script>alert('Login Berhasil');</script>";
     header("Location: dashboard/home.php");
   } else {
     echo "<script>alert('Login Gagal silahkan coba lagi.');</script>";
   }
-}
-
-if (isset($_SESSION["SESSION_EMAIL"])) {
-  header("Location: dashboard/home.php");
 }
 ?>
 

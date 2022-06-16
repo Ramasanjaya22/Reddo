@@ -1,3 +1,10 @@
+<?php
+include '../config.php';
+session_start();
+$user_id = $_SESSION['user_id'];
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -7,8 +14,7 @@
     <title>Leaderboard</title>
 </head>
 
-<body>
-    <div class="container">
+<body class="container">
         <aside>
             <?php
             include('../../assets/includes/sidebar.php');
@@ -18,6 +24,10 @@
         <main>
             <h1>Leaderboard</h1>
         </main>
+    
+    <div class="right">
+        <?php include('../../assets/includes/topprofile.php') ?>
+        <!-- end of top -->
     </div>
     <script src="../../assets/js/dashboard.js"></script>
 </body>
