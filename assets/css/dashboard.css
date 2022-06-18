@@ -316,6 +316,7 @@ main .card .profile-user {
   border-radius: var(--card-border-radius);
   box-shadow: none;
   transition: all 300ms ease;
+  width: 100%;
 }
 .right .bookmark .updates:hover {
   box-shadow: var(--box-shadow);

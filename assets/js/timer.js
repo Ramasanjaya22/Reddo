@@ -1,9 +1,7 @@
 const el = document.querySelector(".clock");
 const bell = document.querySelector("audio");
-
 const mindiv = document.querySelector(".mins");
 const secdiv = document.querySelector(".secs");
-
 const startBtn = document.querySelector(".start");
 localStorage.setItem("btn", "focus");
 
@@ -23,6 +21,8 @@ startBtn.addEventListener("click", () => {
   setTimeout(decremenT(), 60);
   startBtn.style.transform = "scale(0)";
   paused = false;
+  //Jika waktunya sudah selesai maka redirect ke halaman baru
+  
 });
 
 function decremenT() {
@@ -36,10 +36,17 @@ function decremenT() {
     perc = Math.ceil(((totalsecs - seconds) / totalsecs) * 100);
     setProgress(perc);
     seconds--;
+
+    if(seconds == 1195){
+      let poin = focusTimeInput.value;
+      window.location.href = "tambahPoin.php?poin=" + poin;
+    }
+
     initial = window.setTimeout("decremenT()", 1000);
     if (seconds < 10) {
       circle.classList.add("danger");
     }
+   
   } else {
     mins = 0;
     seconds = 0;
