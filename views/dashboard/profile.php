@@ -32,7 +32,8 @@ $user_id = $_SESSION['user_id'];
                 }
                 ?>
 
-                <div class="profile-user" style="padding:1rem;text-align: center;align-items: center;">
+                <div class="profile-user" style="padding:1rem;
+                        text-align: center;align-items: center;">
                     <h1>Hi! <?php echo $fetch['name']; ?></h1>
                     <div class="photo-profile">
                         <?php

@@ -131,12 +131,13 @@ if (isset($_POST['update_profile'])) {
                 border-radius: var(--border-radius-2);
                 font-weight: 700;
                 cursor: pointer;" value="update profile" name="update_profile">Update Profile</button>
-                            <a href="home.php"><button class="btn" type="submit" style="background: var(--color-danger);
+
+                            <a href="profile.php" style="background: var(--color-danger);
                 color: var(--color-white);
                 padding: 1rem;
                 border-radius: var(--border-radius-2);
                 font-weight: 700;
-                cursor: pointer;" value="update profile" name="update_profile">Kembali</button></a>
+                cursor: pointer;">Kembali</a>
                         </div>
                     </form>
                 </div>

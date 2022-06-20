@@ -112,8 +112,8 @@ if (!isset($user_id)) {
 
             <?php
             include "../config.php";
-            $ambilData = mysqli_query($conn, "SELECT halaman,catatan FROM bookmark,users WHERE users.id = bookmark.id_user AND id=$user_id ORDER BY id_bookmark DESC");
             $data = [];
+            $ambilData = mysqli_query($conn, "SELECT halaman,catatan FROM bookmark,users WHERE users.id = bookmark.id_user AND id=$user_id  ORDER BY id_bookmark DESC LIMIT 0,3");
             while ($tampil = mysqli_fetch_assoc($ambilData)) {
                 $data[] = $tampil;
             }
@@ -137,6 +137,7 @@ if (!isset($user_id)) {
                         </div>
                     </div>
                 <?php endforeach; ?>
+                <div style="text-align: right"><a href="bookmark.php" style="color:var(--color-primary);font-weight: bold;" target="_blank">Lihat semua</a></div>
             </div>
         </div>
     </div>
