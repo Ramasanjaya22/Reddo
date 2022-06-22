@@ -37,7 +37,7 @@ function decremenT() {
     setProgress(perc);
     seconds--;
 
-    if(seconds == 1195){
+    if(seconds == 0){
       let poin = focusTimeInput.value;
       window.location.href = "tambahPoin.php?poin=" + poin;
     }
