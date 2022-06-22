@@ -24,6 +24,7 @@ $user_id = $_SESSION['user_id'];
             <?php
             include "../config.php";
             $data = [];
+            
             $ambilData = mysqli_query($conn, "SELECT halaman,catatan FROM bookmark,users WHERE users.id = bookmark.id_user AND id=$user_id  ORDER BY id_bookmark ASC ");
             while ($tampil = mysqli_fetch_assoc($ambilData)) {
                 $data[] = $tampil;

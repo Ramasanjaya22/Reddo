@@ -119,7 +119,7 @@ if (!isset($user_id)) {
             }
             $bookmark = $data;
             ?>
-            <div class="sales-analytics">
+            <div class="history-bacaan">
                 <h2>History bacaan</h2>
                 <?php $no = 1;
                 foreach ($bookmark as $bookmark) : ?>

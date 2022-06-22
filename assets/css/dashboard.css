@@ -100,8 +100,7 @@ aside .top {
   background: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 1.4rem;
+  margin-top: 5rem;
 }
 
 /* aside .logo{
@@ -121,7 +120,7 @@ aside .close {
 aside .sidebar {
   display: flex;
   flex-direction: column;
-  height: 86vh;
+  height: 71vh;
   position: relative;
   top: 3rem;
 }
@@ -354,14 +353,14 @@ textarea {
   background: #2d1d4e;
   color: var(--color-white);
 }
-/* sales analystics */
-.right .sales-analytics {
+
+.right .history-bacaan {
   margin-top: 2rem;
 }
-.right .sales-analytics h2 {
+.right .history-bacaan h2 {
   margin-bottom: 0.8rem;
 }
-.right .sales-analytics .item {
+.right .history-bacaan .item {
   background: var(--color-white);
   display: flex;
   align-items: center;
@@ -372,17 +371,17 @@ textarea {
   box-shadow: none;
   transition: all 300ms ease;
 }
-.right .sales-analytics .item:hover {
+.right .history-bacaan .item:hover {
   box-shadow: var(--box-shadow);
 }
-.right .sales-analytics .item .right {
+.right .history-bacaan .item .right {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0;
   width: 100%;
 }
-.right .sales-analytics .item .icon {
+.right .history-bacaan .item .icon {
   background: var(--color-white);
 }
 

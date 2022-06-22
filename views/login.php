@@ -63,8 +63,11 @@ if (isset($_POST["login"])) {
           </div>
         </div>
 
+
+
         <form action="" method="POST">
-          <div class="email ">
+
+          <div class="email">
             <div class="offset-2 col-lg-8 mt-2">
               <label for="email" class="form-label">Email</label>
               <input type="email" name="email" class="form-control md-w-50" id="email" placeholder="Masukkan email kamu" autocomplete="off" required autofocus="on">
@@ -78,19 +81,9 @@ if (isset($_POST["login"])) {
               <input class="mt-2" type="checkbox" onclick="myFunction()">Show Password
             </div>
           </div>
-
-          <div class="rememberforgot">
-            <div class="row g-3 mt-2">
-              <div class="col offset-2">
-                <div class="rememberme">
-                  <input type="radio" class="form-check-input" id="remember">
-                  <label class="form-remember-label" for="rememberme" name="rememberme" value="rememberme">Remember
-                    me</label>
-                </div>
-              </div>
-            </div>
-          </div>
       </div>
+
+
 
       <div class="button">
         <div class=" d-grid gap-2 offset-2 col-lg-8 mt-4">
