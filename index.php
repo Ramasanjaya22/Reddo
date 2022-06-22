@@ -8,8 +8,8 @@
   <link rel="icon" href="../assets/img/reddo-transparant.png" type="image/x-icon">
   <title>Reddo Game-based Reading tracker</title>
   <!-- style -->
-  <link rel="stylesheet" href="../assets/css/bootstrap.css">
-  <link rel="stylesheet" href="../assets/css/landing.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
 
 
   <style>
