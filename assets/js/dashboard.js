@@ -18,10 +18,10 @@ themeToggler.addEventListener('click', () => {
     var theme;
     if(SetTheme.classList.contains("dark-theme-variables")){
         
-        console.log("Dark mode");
+        
         theme = "DARK";
     }else{
-        console.log("Light mode");
+       
         theme = "LIGHT";
     }
     localStorage.setItem("PageTheme", JSON.stringify(theme));

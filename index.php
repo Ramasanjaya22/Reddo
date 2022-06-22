@@ -28,12 +28,12 @@
       <a href="#">
         <img style="margin-right: 0.75rem; width: 75px;" src="assets/img/reddo-transparant.png" alt="logo" />
       </a>
-      <!-- nav-mobile -->
+      <!-- nav-responsive -->
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog" aria-labelledby="targetModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+      <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
           <div class="modal-content bg-white border-0">
             <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
               <a class="modal-title" id="targetModalLabel">
@@ -42,6 +42,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
+
               <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                   <a class="nav-link" href="#home">Home</a>
@@ -56,16 +57,20 @@
                   <a class="nav-link" href="https://wa.link/vizf4y">Kontak</a>
                 </li>
               </ul>
+
             </div>
             <div class="modal-footer border-0 gap-3" style="padding: 2rem; padding-top: 0.75rem">
+
               <a href="views/login.php" class="btn btn-default btn-no-fill" type="submit" name="login">Log In</a>
               <a href="views/register.php" class="btn btn-fill text-white" name="register">Register</a>
+
             </div>
           </div>
         </div>
       </div>
       <!-- desktop nav -->
       <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#home">Home</a>
@@ -80,6 +85,7 @@
             <a class="nav-link" href="https://wa.link/vizf4y">Kontak</a>
           </li>
         </ul>
+
         <div class="gap-3">
           <a href="views/login.php" class="btn btn-no-fill">Log In</a>
           <a href="views/register.php" class="btn btn-fill text-white">Register</a>
@@ -120,7 +126,9 @@
       <!-- Right Column -->
       <div class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
         <h2 class="reveal title-text">3 Fitur Utama dari REDDO</h2>
+
         <ul style="padding: 0; margin: 0">
+
           <li class="reveal list-unstyled" style="margin-bottom: 1rem;">
             <h4 class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
               <span class="circle text-white d-flex align-items-center justify-content-center">
@@ -133,6 +141,7 @@
               secara mudah dan menyenangkan!
             </p>
           </li>
+
           <li class="reveal list-unstyled" style="margin-bottom: 1rem">
             <h4 class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
               <span class="circle text-white d-flex align-items-center justify-content-center">
@@ -145,6 +154,7 @@
               tenang aja, Reddo memiliki fitur untuk menampilkan halaman Perpustakaan untuk buat kamu yang lagi bingung mau baca apa. Jadi gausah searching" lagi nih
             </p>
           </li>
+
           <li class="reveal list-unstyled" style="margin-bottom: 3rem">
             <h4 class="title-caption d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
               <span class="circle text-white d-flex align-items-center justify-content-center">
@@ -157,6 +167,7 @@
               Reddo memiliki fitur Quest ala game Rpg sehingga setiap kamu selesai menyelesaikan task, kamu akan mendapatkan point yang nantinya digunakan untuk bersaing pada posisi LeaderBoard untuk memperebutkan peringkat teratas!
             </p>
           </li>
+          
         </ul>
 
       </div>
