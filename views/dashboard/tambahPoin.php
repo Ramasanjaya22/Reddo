@@ -24,7 +24,7 @@ mysqli_query($conn, "UPDATE `users` set poin = $poinUser WHERE id = $user_id");
 header('Location: home.php');
 
 
-// echo "
-// <script>
-// alert('poin = " . $poin . " ');
-// </script>";
+echo "
+<script>
+alert('poin = " . $poin . " ');
+</script>";

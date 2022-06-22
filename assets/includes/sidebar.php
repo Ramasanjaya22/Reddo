@@ -37,12 +37,12 @@
             <h3>Account</h3>
         </a>
         <a href="home.php?logout=
-        <?php 
-        if(isset($_GET['logout'])){
+        <?php
+        if (isset($_GET['logout'])) {
             unset($email);
             session_destroy();
-            setcookie("login","", time() -3600);
-            header('location:../index.php');
+            setcookie("login", "", time() - 3600);
+            header('location:../../index.php');
         } ?>
         "><span class="material-icons-sharp">
                 logout
