@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- logo title bar -->
-  <link rel="icon" href="../assets/img/reddo-transparant.png" type="image/x-icon">
+  <link rel="icon" href="assets/img/reddo-transparant.png" type="image/x-icon">
   <title>Reddo Game-based Reading tracker</title>
   <!-- style -->
   <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -26,7 +26,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a href="#">
-        <img style="margin-right: 0.75rem; width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
+        <img style="margin-right: 0.75rem; width: 75px;" src="assets/img/reddo-transparant.png" alt="logo" />
       </a>
       <!-- nav-mobile -->
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
@@ -37,7 +37,7 @@
           <div class="modal-content bg-white border-0">
             <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
               <a class="modal-title" id="targetModalLabel">
-                <img style="margin-top: 0.5rem;width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
+                <img style="margin-top: 0.5rem;width: 75px;" src="assets/img/reddo-transparant.png" alt="logo" />
               </a>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -103,7 +103,7 @@
         </div>
         <!-- Right Column -->
         <div class="reveal right-column text-center d-flex justify-content-center pe-0">
-          <img id="img-fluid" class="h-auto mw-100" src="../assets/img/ilustrasi-buku.png" alt="" />
+          <img id="img-fluid" class="h-auto mw-100" src="assets/img/ilustrasi-buku.png" alt="" />
         </div>
       </div>
 
@@ -114,7 +114,7 @@
     <div class="d-flex flex-lg-row flex-column align-items-center">
       <!-- Left Column -->
       <div class="reveal img-hero text-center justify-content-center d-flex">
-        <img id="hero" class="img-fluid border rounded-circle w-75" src="../assets/img/ilustrasi-anak.png" alt="" />
+        <img id="hero" class="img-fluid border rounded-circle w-75" src="assets/img/ilustrasi-anak.png" alt="" />
       </div>
 
       <!-- Right Column -->
@@ -169,7 +169,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="">
             <div class="list-space">
-              <img style="width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
+              <img style="width: 75px;" src="assets/img/reddo-transparant.png" alt="logo" />
             </div>
             <nav class="list-unstyled">
               <li class="list-space">
@@ -219,8 +219,8 @@
   </footer>
 
   <!-- reveal js -->
-  <script src="../assets/js/reveal.js"></script>
-  <script src="../assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/reveal.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

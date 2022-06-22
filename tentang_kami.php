@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- logo title bar -->
-    <link rel="icon" href="../assets/img/reddo-transparant.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/reddo-transparant.png" type="image/x-icon">
     <title>Tentang Kami</title>
     <!-- style -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -26,7 +26,7 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <a href="#">
-                <img style="margin-right: 0.75rem; width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
+                <img style="margin-right: 0.75rem; width: 75px;" src="assets/img/reddo-transparant.png" alt="logo" />
             </a>
             <!-- btn-menu | responsive -->
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
@@ -38,7 +38,7 @@
                     <div class="modal-content bg-white border-0">
                         <div class="modal-header border-0" style="padding: 2rem; padding-bottom: 0">
                             <a class="modal-title" id="targetModalLabel">
-                                <img style="margin-top: 0.5rem;width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
+                                <img style="margin-top: 0.5rem;width: 75px;" src="assets/img/reddo-transparant.png" alt="logo" />
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -101,7 +101,7 @@
                     <div class="reveal row">
                         <div class="col-lg-4 column">
                             <div class="rounded-5 p-2" style="background:#593B9B;">
-                                <img class="rounded-5 p-2" style="width: 100%;" src="../assets/img/aboutUs/rama1.jpeg" alt="" />
+                                <img class="rounded-5 p-2" style="width: 100%;" src="assets/img/aboutUs/rama1.jpeg" alt="" />
                             </div>
                             <h3 class="title">Rama Sanjaya</h3>
                             <p class="caption">
@@ -111,8 +111,8 @@
                             </p>
                         </div>
                         <div class="col-lg-4 column">
-                            <div class="rounded-5 p-2"style="background:#593B9B;">
-                                <img class="rounded-5 p-2" style="width: 95%;" src="../assets/img/aboutUs/ihdazul1.jpeg" alt="" />
+                            <div class="rounded-5 p-2" style="background:#593B9B;">
+                                <img class="rounded-5 p-2" style="width: 95%;" src="assets/img/aboutUs/ihdazul1.jpeg" alt="" />
                             </div>
                             <h3 class="title">Ihdazul Aruna Syahriar</h3>
                             <p class="caption">
@@ -121,12 +121,12 @@
                             </p>
                         </div>
                         <div class="col-lg-4 column">
-                            <div class="rounded-5 p-2"style="background:#593B9B;">
-                                <img class="rounded-5 p-2" style="width: 80%;" src="../assets/img/aboutUs/thessa1.jpeg" alt="" />
+                            <div class="rounded-5 p-2" style="background:#593B9B;">
+                                <img class="rounded-5 p-2" style="width: 80%;" src="assets/img/aboutUs/thessa1.jpeg" alt="" />
                             </div>
                             <h3 class="title">Thessa Roxana</h3>
                             <p class="caption">
-                               NIM : 6706213025<br />
+                                NIM : 6706213025<br />
                                 Frontend Developer | UX Designer
                             </p>
                         </div>
@@ -142,7 +142,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="">
                         <div class="list-space">
-                            <img style="width: 75px;" src="../assets/img/reddo-transparant.png" alt="logo" />
+                            <img style="width: 75px;" src="assets/img/reddo-transparant.png" alt="logo" />
                         </div>
                         <nav class="list-unstyled">
                             <li class="list-space">
@@ -193,8 +193,8 @@
     </footer>
 
     <!-- reveal js -->
-    <script src="../assets/js/reveal.js"></script>
-    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/reveal.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
