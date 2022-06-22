@@ -59,8 +59,8 @@
                             </ul>
                         </div>
                         <div class="modal-footer border-0 gap-3" style="padding: 2rem; padding-top: 0.75rem">
-                            <a href="login.php" class="btn btn-default btn-no-fill" type="submit" name="login">Log In</a>
-                            <a href="register.php" class="btn btn-fill text-white" name="register">Register</a>
+                            <a href="views/login.php" class="btn btn-default btn-no-fill" type="submit" name="login">Log In</a>
+                            <a href="views/register.php" class="btn btn-fill text-white" name="register">Register</a>
                         </div>
                     </div>
                 </div>
@@ -82,8 +82,8 @@
                     </li>
                 </ul>
                 <div class="gap-3">
-                    <a href="login.php" class="btn btn-default btn-no-fill">Log In</a>
-                    <a href="register.php" class="btn btn-fill text-white">Register</a>
+                    <a href="views/login.php" class="btn btn-default btn-no-fill">Log In</a>
+                    <a href="views/register.php" class="btn btn-fill text-white">Register</a>
                 </div>
             </div>
 
