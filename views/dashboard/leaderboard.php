@@ -27,7 +27,7 @@ $user_id = $_SESSION['user_id'];
             <?php
             include "../config.php";
             $data = [];
-            $ambilData = mysqli_query($conn, "SELECT username,Image,poin FROM users   ORDER BY username ASC ");
+            $ambilData = mysqli_query($conn, "SELECT username,Image,poin FROM users ORDER BY poin DESC");
             while ($tampil = mysqli_fetch_assoc($ambilData)) {
                 $data[] = $tampil;
             }

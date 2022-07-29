@@ -345,6 +345,8 @@ textarea {
   border-radius: var(--border-radius-1);
   background: var(--color-light);
   color: var(--color-dark);
+  resize: vertical;
+  max-height: 200px;
 }
 .right .bookmark .updates .btn {
   background: var(--color-primary);
